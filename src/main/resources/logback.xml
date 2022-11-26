@@ -1,0 +1,76 @@
+<configuration>
+
+    <!-- con esta linea podemos estraer datos del properties -->
+    <property scope="context" resource="application.properties" />
+
+    <!-- Appenders es el medio por donde se va a mostrar la info-->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Como se van a mostrar-->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Para ponerlos en un archivo -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender" >
+        <file>logs/application-controller.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- otros loggers muy interesantes -->
+    <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
+       <file>app.log</file>
+       <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+           <!-- lo mas coerente es que haya un log por dia y no por segundo como esta actalmente-->
+           <fileNamePattern>logs/app-%d{yyyy-MM-dd-hh-mm-ss}.%i.log</fileNamePattern>
+           <!-- si supera esta cantidad crea otras versiones del mismo archivo-->
+           <maxFileSize>1000KB</maxFileSize>
+       </rollingPolicy>
+       <encoder>
+           <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+           </pattern>
+       </encoder>
+    </appender>
+
+    <!-- supongoa mso que quiero logs descriminados por partidos , machId -->
+    <appender name="SIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
+       <discriminator>
+           <key>userid</key>
+           <defaultValue>unknown</defaultValue>
+       </discriminator>
+       <sift>
+           <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+               <file>logs/user-${userid}.log</file>
+               <encoder>
+                   <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} -%msg%n</pattern>
+               </encoder>
+           </appender>
+       </sift>
+    </appender>
+
+    <!-- logger condicional segun lo que este en el properties -->
+    <if condition='property("app.edition").equals("italia")'>
+       <then>
+           <root level="INFO">
+               <appender-ref ref="STDOUT" />
+               <appender-ref ref="SIFT" />
+           </root>
+           <logger name="ar.com.besy.microservices.futbolmanagercore.controllers" level="DEBUG"  additivity="false">
+               <appender-ref ref="FILE" />
+           </logger>
+       </then>
+    </if>
+
+   <if condition='property("app.edition").equals("argentina")'>
+       <then>
+            <root level="INFO">
+                <appender-ref ref="STDOUT" />
+                <appender-ref ref="SIFT" />
+            </root>
+       </then>
+   </if>
+
+</configuration>

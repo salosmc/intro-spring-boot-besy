@@ -1,0 +1,4 @@
+22:53:34.408 [http-nio-8080-exec-1] DEBUG a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo debug
+22:53:34.409 [http-nio-8080-exec-1] INFO  a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo info
+22:53:34.409 [http-nio-8080-exec-1] WARN  a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo warn
+22:53:34.409 [http-nio-8080-exec-1] ERROR a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo error

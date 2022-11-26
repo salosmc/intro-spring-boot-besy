@@ -1,0 +1,99 @@
+22:52:33.097 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 72978 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+22:52:33.107 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+22:52:33.155 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+22:52:36.206 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+22:52:36.234 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+22:52:36.235 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+22:52:36.235 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+22:52:36.406 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+22:52:36.406 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3115 ms
+22:52:37.379 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:52:37.855 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+22:52:37.892 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+22:52:37.894 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+22:52:37.921 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+22:52:37.988 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+22:52:38.429 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 6.273 seconds (JVM running for 8.113)
+22:53:13.375 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 73077 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+22:53:13.403 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+22:53:13.455 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+22:53:16.726 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+22:53:16.781 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+22:53:16.782 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+22:53:16.783 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+22:53:16.966 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+22:53:16.967 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3391 ms
+22:53:17.968 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+22:53:18.413 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+22:53:18.441 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+22:53:18.443 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+22:53:18.470 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+22:53:18.559 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+22:53:19.184 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 6.805 seconds (JVM running for 9.069)
+22:53:34.341 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:53:34.342 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+22:53:34.344 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+11:10:06.125 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 8496 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+11:10:06.138 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:10:06.190 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:10:09.602 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+11:10:09.629 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+11:10:09.630 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:10:09.630 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:10:09.837 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:10:09.838 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3497 ms
+11:10:11.125 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:10:11.737 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+11:10:11.803 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+11:10:11.805 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+11:10:11.852 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+11:10:11.934 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+11:10:12.518 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 7.373 seconds (JVM running for 10.442)
+11:27:17.338 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:27:17.429 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 9335 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+11:27:17.434 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:27:21.027 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+11:27:21.048 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+11:27:21.049 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:27:21.050 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:27:21.278 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:27:21.279 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3655 ms
+11:27:22.841 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:27:23.313 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+11:27:23.375 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+11:27:23.378 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+11:27:23.455 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+11:27:23.636 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+11:27:24.177 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.122 seconds (JVM running for 10.299)
+11:46:19.092 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:46:19.092 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 10898 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+11:46:19.132 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:46:23.852 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+11:46:23.870 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+11:46:23.871 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:46:23.872 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:46:24.065 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:46:24.065 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4349 ms
+11:46:25.012 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:46:25.475 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+11:46:25.538 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+11:46:25.540 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+11:46:25.580 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+11:46:25.654 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+11:46:26.127 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 9.23 seconds (JVM running for 11.353)
+11:48:32.835 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:48:32.834 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 11032 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+11:48:32.848 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:48:35.805 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+11:48:35.823 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8080"]
+11:48:35.824 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:48:35.824 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:48:35.977 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:48:35.978 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3013 ms
+11:48:36.968 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:48:37.445 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8080"]
+11:48:37.480 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http) with context path '/escuelait/api/v1/microservices'
+11:48:37.482 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+11:48:37.520 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+11:48:37.601 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+11:48:38.024 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 6.258 seconds (JVM running for 8.295)

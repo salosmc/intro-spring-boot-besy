@@ -1,0 +1,6 @@
+19:27:21.465 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:27:21.468 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:27:21.471 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+19:27:21.549 [http-nio-8080-exec-1] INFO  a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo info
+19:27:21.550 [http-nio-8080-exec-1] WARN  a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo warn
+19:27:21.551 [http-nio-8080-exec-1] ERROR a.c.b.m.f.controllers.TeamController - Ejecutando hola mundo error

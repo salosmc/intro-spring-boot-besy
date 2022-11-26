@@ -1,0 +1,10 @@
+-- el nombre es importante
+-- sirve para inicializar la base de datos
+
+CREATE TABLE TABLE_EJEMPLO_PG(
+   ID INT PRIMARY KEY     NOT NULL,
+   NAME           TEXT    NOT NULL,
+   AGE            INT     NOT NULL,
+   ADDRESS        CHAR(50),
+   SALARY         REAL
+);
