@@ -4,8 +4,8 @@ import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-@Repository
-public interface TeamRepository extends JpaRepository<TeamDTO, Integer> {
+//@Repository
+//public interface TeamRepository extends JpaRepository<TeamDTO, Integer> {
 
     /*
     public List<TeamEntity> findByYearLessThan(int year);
@@ -20,4 +20,4 @@ public interface TeamRepository extends JpaRepository<TeamDTO, Integer> {
     public List<TeamEntity> findAllTeamsBetweenYearAndName(String name,int yearBegin,int yearEnd);
     */
 
-}
+//}

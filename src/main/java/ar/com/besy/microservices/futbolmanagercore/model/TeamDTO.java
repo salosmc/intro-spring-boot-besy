@@ -31,7 +31,7 @@ import java.time.LocalDate;
 //Hacemos que extienda de representation Model , lo que va a hacer es implemnetar metodos para agregar links a este objeto
 
 //Creamos la tablas en la base de datos
-@Entity
+//@Entity
 public class TeamDTO extends RepresentationModel<TeamDTO> {
 
     @NonNull // para que sea necesario para el contructor a medida
@@ -39,6 +39,7 @@ public class TeamDTO extends RepresentationModel<TeamDTO> {
     @ApiModelProperty(notes = "Unique identifier of the team.", example = "1", required = true, position = 0)
 
     @NotNull // validamos que no sean null
+
     private Integer id;
 
     @NonNull

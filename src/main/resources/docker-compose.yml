@@ -2,8 +2,8 @@ version: '3'
 
 services:
   #es una mase de datos al parecer
-  postgres9:
-    image: postgres:9.6.12
+  postgres:
+    image: postgres
     container_name: database_postgres
     volumes:
       - data:/opt/microservices/data
@@ -11,8 +11,18 @@ services:
       - 5432:5432
     environment:
       POSTGRES_DB: microservices
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - 80:80
+    depends_on:
+      - postgres
 
 volumes:
   data: {}
