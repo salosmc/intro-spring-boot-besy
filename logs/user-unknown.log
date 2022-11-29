@@ -1846,3 +1846,1474 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 19:07:13.892 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
 19:07:13.897 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
 19:07:13.919 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+13:51:49.241 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 11112 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+13:51:49.252 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+13:51:49.256 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+13:51:52.103 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:51:52.166 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 19 ms. Found 0 JPA repository interfaces.
+13:51:53.920 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+13:51:53.942 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+13:51:53.943 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+13:51:53.944 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+13:51:54.273 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+13:51:54.274 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4865 ms
+13:51:54.631 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+13:51:55.032 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+13:51:55.331 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+13:51:55.572 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+13:51:56.026 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:51:56.331 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:51:56.739 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:51:56.758 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:51:56.831 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'JAVA_HOME' in value "${JAVA_HOME}"
+13:51:56.831 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+13:51:56.848 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+13:51:56.861 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+13:51:56.864 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+13:51:56.898 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+13:51:56.984 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfiguration': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'JAVA_HOME' in value "${JAVA_HOME}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'JAVA_HOME' in value "${JAVA_HOME}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 17 common frames omitted
+13:53:42.124 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 12936 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+13:53:42.124 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+13:53:42.131 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+13:53:44.161 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:53:44.203 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+13:53:45.448 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+13:53:45.467 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+13:53:45.468 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+13:53:45.468 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+13:53:45.729 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+13:53:45.729 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3493 ms
+13:53:45.953 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+13:53:46.232 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+13:53:46.371 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+13:53:46.484 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+13:53:46.915 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:53:47.260 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:53:47.713 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:53:47.733 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:53:48.343 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:53:48.756 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:53:49.550 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+13:53:49.638 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+13:53:49.639 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+13:53:49.697 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+13:53:49.801 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+13:53:50.347 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.877 seconds (JVM running for 10.452)
+14:13:33.868 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+14:13:33.874 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:13:33.888 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:14:11.880 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 2776 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:14:11.879 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:14:11.888 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:14:14.235 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:14:14.282 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 28 ms. Found 0 JPA repository interfaces.
+14:14:15.706 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:14:15.731 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:14:15.732 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:14:15.732 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:14:16.025 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:14:16.026 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4014 ms
+14:14:16.255 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:14:19.625 [main] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:331)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:159)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:117)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:330)
+	at org.springframework.boot.jdbc.EmbeddedDatabaseConnection.isEmbedded(EmbeddedDatabaseConnection.java:162)
+	at org.springframework.boot.jdbc.init.DataSourceScriptDatabaseInitializer.isEmbeddedDatabase(DataSourceScriptDatabaseInitializer.java:70)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.isEnabled(AbstractScriptDatabaseInitializer.java:83)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applyScripts(AbstractScriptDatabaseInitializer.java:106)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.applySchemaScripts(AbstractScriptDatabaseInitializer.java:97)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.initializeDatabase(AbstractScriptDatabaseInitializer.java:75)
+	at org.springframework.boot.sql.init.AbstractScriptDatabaseInitializer.afterPropertiesSet(AbstractScriptDatabaseInitializer.java:65)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:560)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 42 common frames omitted
+14:14:19.744 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:14:20.152 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:14:20.594 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:14:20.854 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:14:21.865 [main] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:331)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:560)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 50 common frames omitted
+14:14:21.866 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator -HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: El intento de conexión falló.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:331)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.net.UnknownHostException: postgres
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:560)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 50 common frames omitted
+14:14:21.870 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+14:14:21.870 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+14:14:21.875 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+14:14:21.891 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:14:21.922 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+14:15:37.969 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:15:37.988 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 11992 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:15:37.990 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:15:40.168 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:15:40.208 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 21 ms. Found 0 JPA repository interfaces.
+14:15:41.539 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:15:41.560 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:15:41.561 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:15:41.561 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:15:41.903 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:15:41.903 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3794 ms
+14:15:42.117 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:15:42.643 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+14:15:42.807 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:15:42.938 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:15:43.412 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:15:43.815 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:15:44.301 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:15:44.325 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:15:45.005 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:15:45.411 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:15:46.159 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+14:15:46.211 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+14:15:46.212 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+14:15:46.257 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+14:15:46.329 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+14:15:46.905 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 9.615 seconds (JVM running for 11.377)
+14:25:06.679 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+14:25:06.684 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:25:06.705 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:25:18.141 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:25:18.151 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 11324 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:25:18.153 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:25:20.362 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:25:20.403 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+14:25:21.886 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:25:21.906 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:25:21.907 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:25:21.907 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:25:22.215 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:25:22.216 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3978 ms
+14:25:22.410 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:25:22.745 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+14:25:22.905 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:25:23.044 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:25:23.469 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:25:23.955 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:25:24.279 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:25:24.281 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:25:24.283 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:25:24.341 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:25:24.350 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+14:25:24.374 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:25:24.423 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+14:31:13.673 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:31:13.681 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 10092 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:31:13.683 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:31:15.900 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:31:15.942 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 22 ms. Found 0 JPA repository interfaces.
+14:31:17.470 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:31:17.493 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:31:17.494 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:31:17.494 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:31:17.775 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:31:17.776 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3997 ms
+14:31:18.126 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:31:18.242 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:31:18.665 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:31:18.876 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:31:19.164 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+14:31:19.229 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:31:19.779 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+14:31:19.800 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+14:31:20.399 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+14:31:20.759 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:31:21.387 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+14:31:21.438 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+14:31:21.441 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+14:31:21.492 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+14:31:21.577 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+14:31:22.054 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 9.103 seconds (JVM running for 10.907)
+14:32:08.964 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+14:32:08.967 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+14:32:08.971 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:32:08.980 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:33:18.628 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:33:18.639 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 11904 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:33:18.641 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:33:20.442 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:33:20.498 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 26 ms. Found 0 JPA repository interfaces.
+14:33:21.738 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:33:21.760 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:33:21.761 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:33:21.761 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:33:22.017 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:33:22.017 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3291 ms
+14:33:22.332 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:33:22.430 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:33:22.770 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:33:23.016 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:33:23.278 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+14:33:23.351 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:33:23.730 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:33:23.731 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:33:23.733 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:33:23.775 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:33:23.783 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+14:33:23.804 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:33:23.843 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+14:46:18.319 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+14:46:18.332 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 2020 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+14:46:18.336 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+14:46:20.273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+14:46:20.314 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 20 ms. Found 0 JPA repository interfaces.
+14:46:21.556 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+14:46:21.579 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+14:46:21.580 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+14:46:21.581 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+14:46:21.904 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+14:46:21.904 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3476 ms
+14:46:22.229 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+14:46:22.338 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+14:46:22.735 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+14:46:22.945 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+14:46:23.307 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+14:46:23.377 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+14:46:23.759 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:46:23.761 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+14:46:23.763 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+14:46:23.789 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+14:46:23.795 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+14:46:23.820 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+14:46:23.860 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:09:51.714 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 1040 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:09:51.725 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:09:51.731 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:09:54.095 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:09:54.148 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+15:09:55.491 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:09:55.512 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:09:55.513 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:09:55.514 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:09:55.778 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:09:55.778 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3872 ms
+15:09:56.308 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:09:56.422 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:09:56.749 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:09:57.007 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:09:58.239 [main] ERROR com.zaxxer.hikari.pool.HikariPool -HikariPool-1 - Exception during pool initialization.
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 50 common frames omitted
+15:09:58.240 [main] WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator -HHH000342: Could not obtain connection to query metadata
+org.postgresql.util.PSQLException: Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:319)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:223)
+	at org.postgresql.Driver.makeConnection(Driver.java:402)
+	at org.postgresql.Driver.connect(Driver.java:261)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:364)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:476)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:561)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:181)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:535)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:241)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:98)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:109)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:235)
+	... 50 common frames omitted
+15:09:58.243 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+15:09:58.244 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+15:09:58.249 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:09:58.279 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:09:58.349 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:275)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:175)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:173)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:127)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo cannot be null when 'hibernate.dialect' not set
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:100)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:54)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:138)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+15:12:02.251 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:12:02.263 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 2312 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:12:02.265 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:12:04.003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:12:04.034 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 16 ms. Found 0 JPA repository interfaces.
+15:12:05.043 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:12:05.063 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:12:05.064 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:12:05.064 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:12:05.261 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:12:05.263 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2917 ms
+15:12:05.556 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:12:05.641 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:12:05.952 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:12:06.153 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:12:06.687 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:12:06.767 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:12:07.270 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:12:07.271 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:12:07.271 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:12:07.276 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:12:07.291 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:12:07.305 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:12:07.337 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:15:27.640 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:15:27.665 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 5732 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:15:27.666 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:15:29.778 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:15:29.812 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+15:15:30.987 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:15:31.010 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:15:31.011 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:15:31.011 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:15:31.321 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:15:31.322 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3556 ms
+15:15:31.662 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:15:31.772 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:15:32.144 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:15:32.302 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:15:32.554 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:15:32.602 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:15:32.905 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:15:32.907 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:15:32.909 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:15:32.944 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:15:32.952 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:15:32.970 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:15:33.007 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:15:58.500 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:15:58.511 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 6824 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:15:58.512 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:16:00.259 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:16:00.289 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+15:16:01.261 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:16:01.281 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:16:01.282 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:16:01.282 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:16:01.468 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:16:01.469 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2866 ms
+15:16:01.771 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:16:01.888 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:16:02.233 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:16:02.392 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:16:02.628 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:16:02.681 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:16:02.974 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:16:02.976 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:16:02.979 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:16:03.002 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:16:03.012 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:16:03.043 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:16:03.081 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:18:54.028 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:18:54.038 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 9564 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:18:54.040 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:18:55.633 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:18:55.663 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 14 ms. Found 0 JPA repository interfaces.
+15:18:56.656 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:18:56.675 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:18:56.676 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:18:56.676 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:18:56.940 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:18:56.941 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2824 ms
+15:18:57.382 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:18:57.484 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:18:57.778 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:18:57.910 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:18:58.151 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:18:58.212 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:18:58.531 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:18:58.533 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:18:58.535 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:18:58.574 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:18:58.582 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:18:58.601 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:18:58.639 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:19:49.612 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:19:49.636 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 9256 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:19:49.638 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:19:51.947 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:19:52.001 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 35 ms. Found 0 JPA repository interfaces.
+15:19:53.605 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:19:53.640 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:19:53.640 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:19:53.641 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:19:53.972 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:19:53.972 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4227 ms
+15:19:54.344 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:19:54.495 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:19:54.936 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:19:55.151 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:19:55.452 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:19:55.509 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:19:55.980 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:19:55.984 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:19:55.985 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:19:56.050 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:19:56.057 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:19:56.084 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:19:56.135 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:21:59.335 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:21:59.352 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 4696 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:21:59.354 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:22:01.696 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:22:01.741 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 25 ms. Found 0 JPA repository interfaces.
+15:22:03.322 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:22:03.350 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:22:03.351 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:22:03.356 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:22:03.732 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:22:03.732 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4275 ms
+15:22:04.139 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:22:04.298 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:22:04.683 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:22:04.995 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:22:05.281 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:22:05.341 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:22:05.752 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:22:05.756 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:22:05.757 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:22:05.798 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:22:05.807 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:22:05.827 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:22:05.861 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:24:11.452 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:24:11.464 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 3128 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:24:11.466 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:24:13.821 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:24:13.874 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 29 ms. Found 0 JPA repository interfaces.
+15:24:15.290 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:24:15.313 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:24:15.314 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:24:15.315 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:24:15.608 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:24:15.609 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4035 ms
+15:24:15.986 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:24:16.135 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:24:16.534 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:24:16.755 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:24:17.157 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:24:17.224 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:24:17.558 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean -Failed to initialize JPA EntityManagerFactory: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:24:17.560 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+15:24:17.560 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+15:24:17.573 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+15:24:17.580 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+15:24:17.605 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+15:24:17.649 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: ar.com.besy.microservices.futbolmanagercore.model.TeamDTO
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:772)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:225)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:239)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:282)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1460)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1494)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+15:27:35.270 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+15:27:35.279 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 10008 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+15:27:35.281 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+15:27:36.933 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+15:27:36.970 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 18 ms. Found 0 JPA repository interfaces.
+15:27:38.003 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+15:27:38.022 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+15:27:38.023 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+15:27:38.023 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+15:27:38.246 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+15:27:38.246 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 2868 ms
+15:27:38.602 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+15:27:38.704 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+15:27:39.005 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+15:27:39.156 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+15:27:39.392 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+15:27:39.441 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+15:27:40.787 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+15:27:40.814 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:27:40.815 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+15:27:40.815 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+15:27:40.817 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+15:27:40.817 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+15:27:40.820 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+15:27:40.893 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(20), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+15:27:41.086 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+15:27:41.096 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+15:27:41.596 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+15:27:41.964 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:27:42.621 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+15:27:42.684 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+15:27:42.685 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+15:27:42.737 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+15:27:42.788 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+15:27:43.105 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.411 seconds (JVM running for 9.767)
+16:09:51.323 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:09:51.326 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+16:09:51.327 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:09:51.405 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:09:51.426 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:09:51.432 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:10:01.913 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+16:10:01.924 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 1992 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+16:10:01.927 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+16:10:05.309 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:10:05.484 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 157 ms. Found 1 JPA repository interfaces.
+16:10:06.891 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+16:10:06.912 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+16:10:06.913 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:10:06.913 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:10:07.228 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+16:10:07.229 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5090 ms
+16:10:07.623 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:10:07.727 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+16:10:08.040 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:10:08.271 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:10:08.700 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:10:08.757 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:10:10.150 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:10:10.161 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:10:10.162 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+16:10:10.162 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:10:10.165 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:10:10.165 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+16:10:10.169 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+16:10:10.237 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(20), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+16:10:10.390 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:10:10.403 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:10:10.858 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:10:11.178 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:10:12.280 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+16:10:12.322 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+16:10:12.324 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+16:10:12.378 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+16:10:12.453 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+16:10:12.787 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 11.561 seconds (JVM running for 12.973)
+16:11:40.888 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:11:40.888 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:11:40.889 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 1 ms
+19:10:45.399 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+19:10:45.404 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+19:10:45.406 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:10:45.447 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:10:45.478 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+19:10:45.483 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+19:10:49.444 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+19:10:49.455 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 6352 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+19:10:49.456 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+19:10:51.192 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:10:51.281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+19:10:52.385 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+19:10:52.400 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+19:10:52.401 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+19:10:52.401 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:10:52.609 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+19:10:52.609 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3062 ms
+19:10:52.929 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+19:10:53.005 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+19:10:53.245 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+19:10:53.461 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+19:10:53.699 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+19:10:53.748 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+19:10:54.882 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:10:54.893 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:10:54.894 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+19:10:54.894 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:10:54.896 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:10:54.896 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+19:10:54.899 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+19:10:54.922 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(20), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+19:10:55.056 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:10:55.096 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:10:55.890 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:10:56.135 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:10:56.585 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+19:10:56.611 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+19:10:56.612 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+19:10:56.641 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+19:10:56.683 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+19:10:57.037 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.158 seconds (JVM running for 9.569)
+19:11:00.171 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:11:00.171 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+19:11:00.173 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+19:14:05.353 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+19:14:05.354 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+19:14:05.355 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:14:05.383 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:14:05.405 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+19:14:05.413 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+19:14:12.580 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+19:14:12.591 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 12748 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+19:14:12.592 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+19:14:14.415 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:14:14.491 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 60 ms. Found 1 JPA repository interfaces.
+19:14:15.518 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+19:14:15.538 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+19:14:15.539 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+19:14:15.539 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:14:15.765 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+19:14:15.766 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3086 ms
+19:14:16.052 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+19:14:16.107 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+19:14:16.376 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+19:14:16.542 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+19:14:16.740 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+19:14:16.787 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+19:14:18.050 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:14:18.061 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:14:18.061 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+19:14:18.061 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:14:18.063 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:14:18.064 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+19:14:18.068 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+19:14:18.091 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+19:14:18.522 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:14:18.552 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:14:19.272 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:14:19.511 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:14:19.976 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+19:14:20.003 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+19:14:20.004 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+19:14:20.028 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+19:14:20.075 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+19:14:20.304 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.303 seconds (JVM running for 9.756)
+19:15:52.002 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:15:52.002 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+19:15:52.005 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 3 ms
+19:25:37.999 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+19:25:38.077 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+19:25:38.082 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+19:25:38.084 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+19:25:38.097 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [string]
+19:25:38.097 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [string]
+19:25:38.098 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [null]
+19:25:38.099 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [string]
+19:25:38.099 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [string]
+19:25:38.099 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [string]
+19:25:38.099 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [50]
+19:25:38.100 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [1]
+19:25:49.161 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+19:25:49.165 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+19:25:49.165 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+19:25:49.166 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+19:25:49.166 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [string]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [string]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [null]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [string]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [string]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [string]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [50]
+19:25:49.167 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [2]
+19:25:50.725 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+19:25:50.729 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [string]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [string]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [null]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [string]
+19:25:50.730 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [string]
+19:25:50.731 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [string]
+19:25:50.731 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [50]
+19:25:50.731 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [3]
+19:26:21.923 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_
+19:29:50.784 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+19:29:50.790 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+19:29:50.790 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [string]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [string]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [null]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [string]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [string]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [string]
+19:29:50.791 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [2000]
+19:29:50.792 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [4]
+19:30:01.379 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_
+19:31:21.288 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+19:31:21.295 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+19:31:21.297 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:31:21.332 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:31:21.362 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+19:31:21.379 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+19:31:28.972 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+19:31:28.976 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 12212 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+19:31:28.981 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+19:31:30.756 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+19:31:30.858 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 84 ms. Found 1 JPA repository interfaces.
+19:31:32.080 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+19:31:32.103 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+19:31:32.104 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+19:31:32.104 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+19:31:32.386 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+19:31:32.387 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3315 ms
+19:31:32.674 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+19:31:32.772 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+19:31:33.109 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+19:31:33.347 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+19:31:33.612 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+19:31:33.670 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+19:31:34.880 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:31:34.891 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:31:34.892 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+19:31:34.892 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:31:34.894 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+19:31:34.895 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+19:31:34.899 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+19:31:34.948 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+19:31:35.101 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:31:35.124 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:31:36.162 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:31:36.423 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+19:31:36.949 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+19:31:36.989 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+19:31:36.990 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+19:31:37.029 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+19:31:37.109 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+19:31:37.446 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 9.096 seconds (JVM running for 10.58)
+19:55:31.517 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+19:55:31.518 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+19:55:31.520 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:55:31.551 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:55:31.567 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+19:55:31.579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

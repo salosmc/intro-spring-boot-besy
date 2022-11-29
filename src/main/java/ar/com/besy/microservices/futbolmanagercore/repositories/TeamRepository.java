@@ -2,22 +2,23 @@ package ar.com.besy.microservices.futbolmanagercore.repositories;
 
 import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-//@Repository
-//public interface TeamRepository extends JpaRepository<TeamDTO, Integer> {
+import java.util.List;
 
-    /*
-    public List<TeamEntity> findByYearLessThan(int year);
+@Repository
+public interface TeamRepository extends JpaRepository<TeamDTO, Integer> {
 
-    public List<TeamEntity> findByYearGreaterThanEqual(int edad);
+    public List<TeamDTO> findByYearLessThan(int year);
 
-    public List<TeamEntity> findByNameLike(String name);
+    public List<TeamDTO> findByYearGreaterThanEqual(int edad);
 
-    public List<TeamEntity> findByNameContaining(String name);
+    public List<TeamDTO> findByNameLike(String name);
+
+    public List<TeamDTO> findByNameContaining(String name);
 
     @Query(value="select * from equipos where name = ?1 and year >= ?2 and year <= ?3" ,nativeQuery = true)
-    public List<TeamEntity> findAllTeamsBetweenYearAndName(String name,int yearBegin,int yearEnd);
-    */
+    public List<TeamDTO> findAllTeamsBetweenYearAndName(String name,int yearBegin,int yearEnd);
 
-//}
+}

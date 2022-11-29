@@ -3,10 +3,12 @@ package ar.com.besy.microservices.futbolmanagercore.services;
 import ar.com.besy.microservices.futbolmanagercore.client.TeamClient;
 import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 //import ar.com.besy.microservices.futbolmanagercore.repositories.TeamRepository;
+import ar.com.besy.microservices.futbolmanagercore.repositories.TeamRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -23,33 +25,34 @@ import java.util.Optional;
 public class TeamArgService implements TeamService {
 
     //ahora nos conectamos al repository
-    //@Autowired
-    //private TeamRepository teamRepository;
+    @Autowired
+    private TeamRepository teamRepository;
 
     //supongamos que ahora este es el que utiliza un cliente externo apra traer un equipo de futbol
     @Autowired
     private TeamClient teamClient;
     public Optional<TeamDTO> getTeamById(Integer id){
+        Optional<TeamDTO> optionalTeamDTO = teamRepository.findById(id);
+        //TeamDTO teamDTO = teamMapper.getTeamDto(optionTeamEntity.get());
+
+        //return Optional.ofNullable(teamDTO);//
+        return optionalTeamDTO;
 
         //return new TeamDTO(id,"Boca");
-        return Optional.ofNullable(teamClient.getTeamById(id));
+        //return Optional.ofNullable(teamClient.getTeamById(id));
     }
 
-    public List<TeamDTO> findAllTeams() {
-        //List<TeamDTO> teams = teamRepository.findAll();
-        //return teams;
-        return null;
+    public List<TeamDTO> findAllTeams(Pageable pageable) {
+        List<TeamDTO> teams = teamRepository.findByYearLessThan(1900);
+        return teams;
     }
     public Integer saveTeam(TeamDTO teamDTO) {
-        //TeamDTO teamDTO1= teamRepository.save(teamDTO);
-        //return teamDTO1.getId();
-        return null;
+        TeamDTO teamDTO1= teamRepository.save(teamDTO);
+        return teamDTO1.getId();
     }
 
     public void deleteById(Integer id) {
-
-        //teamRepository.deleteById(id);
-
+        teamRepository.deleteById(id);
     }
 
 }

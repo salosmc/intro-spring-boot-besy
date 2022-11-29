@@ -4,8 +4,10 @@ import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Primary;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 //CREAMOS OTRA CLASE QUE IMPLEMENTA TeamService PARA VER COMO RESOLVEMOS LA AMBIGUEDAD
@@ -23,5 +25,20 @@ public class TeamItalService implements TeamService {
     //    public TeamDTO getTeamById(Integer id)
     public Optional<TeamDTO> getTeamById(Integer id){
         return Optional.ofNullable(new TeamDTO(id,"Milan"));
+    }
+
+    @Override
+    public List<TeamDTO> findAllTeams(Pageable pageable) {
+        return null;
+    }
+
+    @Override
+    public Integer saveTeam(TeamDTO teamDTO) {
+        return null;
+    }
+
+    @Override
+    public void deleteById(Integer id) {
+
     }
 }

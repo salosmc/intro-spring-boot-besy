@@ -15,6 +15,9 @@ import org.slf4j.LoggerFactory;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -106,6 +109,7 @@ public class TeamController {
         //return ResponseEntity.ok(teamDTO); //explicitamos para la buena practica //antes del opcional
 
         TeamDTO teamDTO = null;
+
         try{
             Optional<TeamDTO> optionalTeamDTO = teamService.getTeamById(id);
             teamDTO = optionalTeamDTO.orElseThrow(NoSuchElementException::new);
@@ -122,20 +126,29 @@ public class TeamController {
     @GetMapping
     //antes //public ResponseEntity<List<TeamDTO>>  getAllTeams()
     //ahora para devolver el link del recurso consumido podemos devolver un CollectionModel {links, content}
-    public ResponseEntity<CollectionModel<TeamDTO>>  getAllTeams(){
+    public ResponseEntity<CollectionModel<TeamDTO>>  getAllTeams(
+            @PageableDefault(size = 3,sort = {"name","year"},direction = Sort.Direction.ASC)
+            Pageable pageable){
 
         List<TeamDTO> teams = new ArrayList<>();
-        teams.add(new TeamDTO(1,"Boca"));
-        teams.add(new TeamDTO(2,"River"));
+        TeamDTO teamDTO = null;
+
+        try{
+            //teams.add(new TeamDTO(1,"Boca"));
+            //teams.add(new TeamDTO(2,"River"));
+            teams = teamService.findAllTeams(pageable);
+
+        }catch(NoSuchElementException e){
+            return ResponseEntity.notFound().build();
+        }
 
         //aca ponemos todos los links al recurso de cada equipo
         teams.forEach(team -> {
             hatoeasTeamHelper.generateSelfLink(team); // el propio recurso
             hatoeasTeamHelper.generatePlayersLink(team); // el recurso de los jugadores
         });
-
         //aca agregamos el link a al recurso consumido.
-        CollectionModel<TeamDTO> teamsModel = hatoeasTeamHelper.generateLinksSelfList(teams);
+        CollectionModel<TeamDTO> teamsModel = hatoeasTeamHelper.generateLinksSelfList(teams,pageable);
 
         return ResponseEntity.ok( teamsModel);
     }
@@ -151,6 +164,8 @@ public class TeamController {
     public ResponseEntity<String> saveTeam(@Validated(OnCreate.class) @RequestBody TeamDTO teamDTO){
 
         System.out.println("Saving team...."+teamDTO.toString() );
+
+        teamService.saveTeam(teamDTO); //guardamos
 
         //antes//return ResponseEntity.ok("http://localhost:8080/teams/"+ teamDTO.toString());
         //Aca obtenemos la url actual de este recurso.
@@ -177,6 +192,9 @@ public class TeamController {
         if(teamDTO == null){
             return ResponseEntity.notFound().build();
         }
+
+        teamService.saveTeam(teamDTO);
+
         return ResponseEntity.ok(teamDTO);
     }
 
@@ -190,6 +208,8 @@ public class TeamController {
         if(teamDTO == null){
             return ResponseEntity.notFound().build();
         }
+
+        teamService.deleteById(id);
 
         return ResponseEntity.ok().build();
     }

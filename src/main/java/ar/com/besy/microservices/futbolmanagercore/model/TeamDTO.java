@@ -9,6 +9,9 @@ import lombok.*;
 import org.springframework.hateoas.RepresentationModel;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.validation.constraints.*;
 import java.time.LocalDate;
 
@@ -31,15 +34,17 @@ import java.time.LocalDate;
 //Hacemos que extienda de representation Model , lo que va a hacer es implemnetar metodos para agregar links a este objeto
 
 //Creamos la tablas en la base de datos
-//@Entity
+@Entity(name="Equipo")
 public class TeamDTO extends RepresentationModel<TeamDTO> {
 
     @NonNull // para que sea necesario para el contructor a medida
     // descripcion y otros de la propiedad de algun atributo
     @ApiModelProperty(notes = "Unique identifier of the team.", example = "1", required = true, position = 0)
 
-    @NotNull // validamos que no sean null
+    //@NotNull // validamos que no sean null
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
     @NonNull
@@ -52,7 +57,7 @@ public class TeamDTO extends RepresentationModel<TeamDTO> {
     @PositiveOrZero (message="{app.field.validation.error.year}") //validation //le especificamos, si no pasa esa validacion tome este mensaje como error
     private int year;
 
-    @Size(min=4,max=20) //validation
+    //@Size(min=4,max=20) //validation
     private String logo;
 
     private int afiliateQuantity;
@@ -64,13 +69,13 @@ public class TeamDTO extends RepresentationModel<TeamDTO> {
 
     private boolean active;
 
-    @Past // validation, nos aseguramos que la fecha sea pasado
+    //@Past // validation, nos aseguramos que la fecha sea pasado
     private LocalDate fundationDate;
 
-    @Email // validation
+    //@Email // validation
     private String email;
 
-    @CUIT // validation personalizada, muy crac hacer tus propias etiquetas :D
+    //@CUIT // validation personalizada, muy crac hacer tus propias etiquetas :D
     private String cuit;
 
     //Creamos unos atributos para la prueba que hacemos en la capa clente

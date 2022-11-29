@@ -4,6 +4,7 @@ import ar.com.besy.microservices.futbolmanagercore.controllers.TeamController;
 import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 import lombok.Data;
 import org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties;
+import org.springframework.data.domain.Pageable;
 import org.springframework.hateoas.CollectionModel;
 import org.springframework.hateoas.Link;
 import org.springframework.stereotype.Component;
@@ -24,11 +25,12 @@ public class HatoeasTeamHelper {
         teamDTO.add(withSelfRel);
     }
 
-    public CollectionModel<TeamDTO> generateLinksSelfList(List<TeamDTO> teams) {
+    public CollectionModel<TeamDTO> generateLinksSelfList(List<TeamDTO> teams,Pageable pageable) {
 
-        Link link = linkTo(methodOn(TeamController.class).getAllTeams()).withSelfRel();
+        Link link = linkTo(methodOn(TeamController.class).getAllTeams(pageable)).withSelfRel();
         CollectionModel<TeamDTO> result = CollectionModel.of(teams, link);
         return result;
+
     }
 
     public void generatePlayersLink(TeamDTO teamDTO) {

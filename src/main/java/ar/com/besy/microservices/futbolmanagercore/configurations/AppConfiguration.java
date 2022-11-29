@@ -40,7 +40,7 @@ public class AppConfiguration {
     //@Value("${app.countries}")
     private String[] countries;
 
-    @Value("${JAVA_HOME}") // variables de entorno de JAVA // tuve que configurar una variable de entorno no la tenia en mi IntelliJ
+    //@Value("${JAVA_HOME}") // variables de entorno de JAVA // tuve que configurar una variable de entorno no la tenia en mi IntelliJ
     private String javaHome;
 
     //veamos de donde toma datos, del apllication o del messages //al application le da prioridad
