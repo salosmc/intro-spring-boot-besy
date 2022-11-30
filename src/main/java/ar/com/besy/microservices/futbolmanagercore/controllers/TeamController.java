@@ -131,7 +131,7 @@ public class TeamController {
             Pageable pageable){
 
         List<TeamDTO> teams = new ArrayList<>();
-        TeamDTO teamDTO = null;
+        //TeamDTO teamDTO = null;
 
         try{
             //teams.add(new TeamDTO(1,"Boca"));

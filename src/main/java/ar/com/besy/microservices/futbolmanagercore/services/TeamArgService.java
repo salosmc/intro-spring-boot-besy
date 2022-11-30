@@ -1,6 +1,8 @@
 package ar.com.besy.microservices.futbolmanagercore.services;
 
 import ar.com.besy.microservices.futbolmanagercore.client.TeamClient;
+import ar.com.besy.microservices.futbolmanagercore.entities.TeamEntity;
+import ar.com.besy.microservices.futbolmanagercore.mappers.TeamMapper;
 import ar.com.besy.microservices.futbolmanagercore.model.TeamDTO;
 //import ar.com.besy.microservices.futbolmanagercore.repositories.TeamRepository;
 import ar.com.besy.microservices.futbolmanagercore.repositories.TeamRepository;
@@ -8,6 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
@@ -31,7 +34,14 @@ public class TeamArgService implements TeamService {
     //supongamos que ahora este es el que utiliza un cliente externo apra traer un equipo de futbol
     @Autowired
     private TeamClient teamClient;
+
+    //Traemos el mapper para pasar de los dtos a los mappers
+    @Autowired
+    private TeamMapper teamMapper;
+
+
     public Optional<TeamDTO> getTeamById(Integer id){
+        /*
         Optional<TeamDTO> optionalTeamDTO = teamRepository.findById(id);
         //TeamDTO teamDTO = teamMapper.getTeamDto(optionTeamEntity.get());
 
@@ -40,15 +50,34 @@ public class TeamArgService implements TeamService {
 
         //return new TeamDTO(id,"Boca");
         //return Optional.ofNullable(teamClient.getTeamById(id));
+
+         */
+        Optional<TeamEntity> optionTeamEntity = teamRepository.findById(id);
+        TeamDTO teamDTO = teamMapper.getTeamDto(optionTeamEntity.get());
+
+        return Optional.ofNullable(teamDTO);// optionalTeam;
+
     }
 
     public List<TeamDTO> findAllTeams(Pageable pageable) {
-        List<TeamDTO> teams = teamRepository.findByYearLessThan(1900);
+        //List<TeamDTO> teams = teamRepository.findByYearLessThan(1900);
+        Page<TeamEntity> pageTeams = teamRepository.findAll(pageable); //consulltamos
+        List<TeamEntity> teamsEntities = pageTeams.getContent(); //extraemos el contenido
+        List<TeamDTO> teams = teamMapper.getTeamsDtos(teamsEntities); //mapeamos
         return teams;
     }
+
+
+    public List<TeamDTO> findAllTeams() {
+        List<TeamEntity> teamsEntities = teamRepository.findAll(); //buscamos todo
+        List<TeamDTO> teamsDtos = teamMapper.getTeamsDtos(teamsEntities); //mapeamos
+        return teamsDtos; //retornamos toda la lista
+    }
+
     public Integer saveTeam(TeamDTO teamDTO) {
-        TeamDTO teamDTO1= teamRepository.save(teamDTO);
-        return teamDTO1.getId();
+        TeamEntity teamEntity = teamMapper.getTeamEntity(teamDTO);//mapeamos
+        teamEntity = teamRepository.save(teamEntity);//guardamos
+        return teamEntity.getId();//retornamos el id
     }
 
     public void deleteById(Integer id) {

@@ -3317,3 +3317,428 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 19:55:31.551 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
 19:55:31.567 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
 19:55:31.579 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+23:57:54.803 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 35287 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+23:57:54.819 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+23:57:54.822 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+23:57:57.799 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+23:57:57.957 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 132 ms. Found 1 JPA repository interfaces.
+23:57:59.759 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+23:57:59.785 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+23:57:59.786 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+23:57:59.787 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+23:58:00.152 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+23:58:00.154 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5227 ms
+23:58:00.592 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+23:58:00.724 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+23:58:01.202 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+23:58:01.497 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+23:58:01.840 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+23:58:01.908 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+23:58:03.745 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+23:58:03.771 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+23:58:03.772 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+23:58:03.773 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+23:58:03.774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+23:58:03.774 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+23:58:03.779 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+23:58:03.791 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+23:58:03.818 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+23:58:03.834 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+23:58:05.502 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+23:58:06.117 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+23:58:06.930 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+23:58:06.973 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+23:58:06.975 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+23:58:07.019 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+23:58:07.090 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+23:58:07.640 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 14.086 seconds (JVM running for 16.875)
+23:59:41.489 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:59:41.489 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+23:59:41.492 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+00:04:20.604 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_0_, teamdto0_.active as active2_0_0_, teamdto0_.afiliate_quantity as afiliate3_0_0_, teamdto0_.cuit as cuit4_0_0_, teamdto0_.email as email5_0_0_, teamdto0_.fundation_date as fundatio6_0_0_, teamdto0_.logo as logo7_0_0_, teamdto0_.name as name8_0_0_, teamdto0_.title as title9_0_0_, teamdto0_.year as year10_0_0_ from equipo teamdto0_ where teamdto0_.id=?
+00:04:20.614 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+00:04:20.641 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+00:04:20.725 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+00:04:20.727 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+00:04:20.727 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+00:04:20.728 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+00:04:20.729 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [salo]
+00:04:20.730 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+00:04:20.739 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+00:04:20.739 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [Huracan]
+00:04:20.739 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+00:04:20.740 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1900]
+00:04:20.740 [http-nio-8081-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [1]
+00:05:42.798 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+00:05:42.801 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+00:05:42.802 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+00:05:42.802 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+00:05:42.802 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+00:05:42.803 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [pepito]
+00:05:42.803 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+00:05:42.803 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+00:05:42.803 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [pepito]
+00:05:42.804 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+00:05:42.804 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [2000]
+00:05:42.805 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [2]
+00:06:06.711 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+00:06:06.714 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+00:06:06.716 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+00:06:06.716 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+00:06:06.717 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+00:06:06.717 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [sarah]
+00:06:06.717 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+00:06:06.718 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+00:06:06.718 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [sarah]
+00:06:06.718 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+00:06:06.718 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [2020]
+00:06:06.719 [http-nio-8081-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [3]
+00:10:04.023 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ where teamdto0_.year<?
+00:10:04.025 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1900]
+00:10:32.801 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ where teamdto0_.year<?
+00:10:32.802 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1900]
+00:10:45.484 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ where teamdto0_.year<?
+00:10:45.489 [http-nio-8081-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1900]
+00:16:30.278 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+00:16:30.279 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+00:16:30.280 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+00:16:30.292 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+00:16:30.299 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+00:16:30.319 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+00:16:40.625 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 36313 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+00:16:40.663 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+00:16:40.692 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+00:16:43.854 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:16:43.995 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 110 ms. Found 1 JPA repository interfaces.
+00:16:45.968 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+00:16:45.993 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+00:16:45.994 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+00:16:45.994 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+00:16:46.365 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+00:16:46.367 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5528 ms
+00:16:46.909 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+00:16:47.092 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+00:16:47.493 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:16:47.737 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+00:16:48.073 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+00:16:48.145 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+00:16:50.000 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+00:16:50.031 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+00:16:50.031 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+00:16:50.032 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+00:16:50.034 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+00:16:50.035 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+00:16:50.040 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+00:16:50.046 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+00:16:50.066 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:16:50.086 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:16:51.829 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:16:52.276 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:16:53.077 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+00:16:53.121 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+00:16:53.123 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+00:16:53.175 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+00:16:53.257 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+00:16:53.907 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 14.495 seconds (JVM running for 17.332)
+00:17:18.260 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:17:18.261 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+00:17:18.263 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+00:17:18.635 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ?
+00:22:23.080 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+00:22:23.082 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+00:22:23.083 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+00:22:23.094 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+00:22:23.100 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+00:22:23.132 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+00:22:33.933 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 36489 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+00:22:33.953 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+00:22:33.953 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+00:22:37.305 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+00:22:37.482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 131 ms. Found 1 JPA repository interfaces.
+00:22:39.194 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+00:22:39.220 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+00:22:39.221 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+00:22:39.221 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+00:22:39.534 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+00:22:39.535 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5341 ms
+00:22:39.951 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+00:22:40.061 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+00:22:40.442 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+00:22:40.693 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+00:22:41.104 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+00:22:41.182 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+00:22:42.855 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+00:22:42.876 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+00:22:42.876 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+00:22:42.877 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+00:22:42.878 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+00:22:42.878 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+00:22:42.883 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+00:22:42.894 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), name varchar(255), title varchar(255), year int4 not null, primary key (id))
+00:22:42.917 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+00:22:42.936 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+00:22:44.712 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+00:22:45.180 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+00:22:46.277 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+00:22:46.447 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+00:22:46.454 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+00:22:46.546 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+00:22:46.725 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+00:22:47.167 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 14.479 seconds (JVM running for 17.281)
+00:22:53.393 [http-nio-8081-exec-2] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:22:53.393 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+00:22:53.399 [http-nio-8081-exec-2] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 5 ms
+00:22:53.728 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ?
+10:22:32.613 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+10:22:32.704 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+10:22:32.709 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+10:22:32.715 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+10:22:32.717 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+10:22:32.717 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [sarah]
+10:22:32.719 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+10:22:32.719 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+10:22:32.720 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [sarah]
+10:22:32.720 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+10:22:32.720 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [2020]
+10:22:32.720 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [1]
+10:22:47.730 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+10:22:47.733 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+10:22:47.734 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+10:22:47.734 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+10:22:47.734 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+10:22:47.734 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [salo]
+10:22:47.735 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+10:22:47.735 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+10:22:47.735 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [salo]
+10:22:47.745 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+10:22:47.746 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [2020]
+10:22:47.749 [http-nio-8081-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [2]
+10:23:30.218 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+10:23:30.223 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+10:23:30.224 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+10:23:30.225 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+10:23:30.225 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+10:23:30.226 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [algo]
+10:23:30.226 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+10:23:30.227 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+10:23:30.227 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [algo]
+10:23:30.227 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+10:23:30.228 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1900]
+10:23:30.228 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [3]
+10:23:39.671 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+10:23:39.675 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, name, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+10:23:39.675 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+10:23:39.675 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+10:23:39.676 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+10:23:39.677 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [algo]
+10:23:39.678 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+10:23:39.678 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+10:23:39.678 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [algo]
+10:23:39.679 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+10:23:39.679 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1800]
+10:23:39.679 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [4]
+10:24:03.676 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ?
+10:24:03.710 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -select count(teamdto0_.id) as col_0_0_ from equipo teamdto0_
+10:32:28.836 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ? offset ?
+10:32:28.842 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL -select count(teamdto0_.id) as col_0_0_ from equipo teamdto0_
+10:32:45.745 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ?
+10:32:45.752 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL -select count(teamdto0_.id) as col_0_0_ from equipo teamdto0_
+10:34:29.446 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select teamdto0_.id as id1_0_, teamdto0_.active as active2_0_, teamdto0_.afiliate_quantity as afiliate3_0_, teamdto0_.cuit as cuit4_0_, teamdto0_.email as email5_0_, teamdto0_.fundation_date as fundatio6_0_, teamdto0_.logo as logo7_0_, teamdto0_.name as name8_0_, teamdto0_.title as title9_0_, teamdto0_.year as year10_0_ from equipo teamdto0_ order by teamdto0_.name asc, teamdto0_.year asc limit ?
+10:34:29.450 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select count(teamdto0_.id) as col_0_0_ from equipo teamdto0_
+11:27:16.838 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+11:27:16.856 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+11:27:16.858 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+11:27:16.877 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+11:27:16.886 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+11:27:16.964 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+11:46:27.531 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:46:27.533 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 44072 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+11:46:27.542 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:46:29.383 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:46:29.477 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 77 ms. Found 1 JPA repository interfaces.
+11:46:30.732 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+11:46:30.754 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+11:46:30.755 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:46:30.756 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:46:30.966 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:46:30.966 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3327 ms
+11:46:31.292 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+11:46:31.394 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+11:46:31.673 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:46:31.835 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+11:46:32.124 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+11:46:32.175 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+11:46:33.322 [main] DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+11:46:33.341 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+11:46:33.341 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipos" does not exist, skipping
+11:46:33.341 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+11:46:33.343 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+11:46:33.343 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+11:46:33.348 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+11:46:33.355 [main] DEBUG org.hibernate.SQL -create table equipos (id int4 not null, active boolean not null, body varchar(255), cuit varchar(255), fundation_date date, logo varchar(255), mail varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+11:46:33.380 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:46:33.396 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:46:34.439 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:46:34.698 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+11:46:35.186 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+11:46:35.216 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+11:46:35.218 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+11:46:35.243 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+11:46:35.290 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+11:46:35.613 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 9.037 seconds (JVM running for 11.636)
+11:46:58.142 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+11:46:58.143 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+11:46:58.151 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 8 ms
+11:46:58.496 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.body as body3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.fundation_date as fundatio5_0_, teamentity0_.logo as logo6_0_, teamentity0_.mail as mail7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipos teamentity0_ order by teamentity0_.nombre_equipo asc, teamentity0_.year asc limit ?
+11:47:17.065 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.body as body3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.fundation_date as fundatio5_0_, teamentity0_.logo as logo6_0_, teamentity0_.mail as mail7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipos teamentity0_ order by teamentity0_.nombre_equipo asc, teamentity0_.year asc limit ?
+12:13:02.891 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+12:13:02.899 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+12:13:02.906 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipos cascade
+12:13:02.917 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+12:13:02.937 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+12:13:02.974 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+13:00:39.480 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+13:00:39.480 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 11.0.16.1 on salo-UX32VD with PID 48132 (/home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core/target/classes started by salo in /home/salo/besysoft/SpringBootCapacitación/salo-futbol-manager-core)
+13:00:39.502 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+13:00:41.414 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13:00:41.501 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 68 ms. Found 1 JPA repository interfaces.
+13:00:42.512 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+13:00:42.530 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+13:00:42.531 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+13:00:42.531 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+13:00:42.710 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+13:00:42.710 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3093 ms
+13:00:43.008 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+13:00:43.075 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+13:00:43.303 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+13:00:43.446 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+13:00:43.656 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+13:00:43.711 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+13:00:44.857 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+13:00:44.882 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+13:00:44.882 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+13:00:44.883 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+13:00:44.884 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+13:00:44.884 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+13:00:44.889 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+13:00:44.970 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+13:00:44.992 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+13:00:45.009 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+13:00:46.046 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13:00:46.289 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+13:00:46.730 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+13:00:46.793 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+13:00:46.795 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+13:00:46.851 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+13:00:46.907 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+13:00:47.283 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 8.812 seconds (JVM running for 11.069)
+13:01:06.846 [http-nio-8081-exec-3] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+13:01:06.847 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+13:01:06.849 [http-nio-8081-exec-3] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+13:01:07.166 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.afiliate_quantity as afiliate3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.email as email5_0_, teamentity0_.fundation_date as fundatio6_0_, teamentity0_.logo as logo7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipo teamentity0_ order by teamentity0_.nombre_equipo asc, teamentity0_.year asc limit ?
+13:02:34.585 [http-nio-8081-exec-6] ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] -Servlet.service() for servlet [dispatcherServlet] in context with path [/escuelait/api/v1/microservices] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: id is marked non-null but is null] with root cause
+java.lang.NullPointerException: id is marked non-null but is null
+	at ar.com.besy.microservices.futbolmanagercore.entities.TeamEntity.setId(TeamEntity.java:15)
+	at ar.com.besy.microservices.futbolmanagercore.mappers.TeamMapperImpl.getTeamEntity(TeamMapperImpl.java:48)
+	at ar.com.besy.microservices.futbolmanagercore.services.TeamArgService.saveTeam(TeamArgService.java:78)
+	at ar.com.besy.microservices.futbolmanagercore.controllers.TeamController.saveTeam(TeamController.java:168)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+13:04:01.211 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_0_, teamentity0_.active as active2_0_0_, teamentity0_.afiliate_quantity as afiliate3_0_0_, teamentity0_.cuit as cuit4_0_0_, teamentity0_.email as email5_0_0_, teamentity0_.fundation_date as fundatio6_0_0_, teamentity0_.logo as logo7_0_0_, teamentity0_.nombre_equipo as nombre_e8_0_0_, teamentity0_.title as title9_0_0_, teamentity0_.year as year10_0_0_ from equipo teamentity0_ where teamentity0_.id=?
+13:04:01.215 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+13:04:01.222 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+13:04:01.269 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, nombre_equipo, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+13:04:01.271 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+13:04:01.271 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+13:04:01.272 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+13:04:01.272 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [algo]
+13:04:01.273 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+13:04:01.274 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+13:04:01.275 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [algo]
+13:04:01.275 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+13:04:01.275 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1800]
+13:04:01.276 [http-nio-8081-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [1]
+13:04:20.321 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_0_, teamentity0_.active as active2_0_0_, teamentity0_.afiliate_quantity as afiliate3_0_0_, teamentity0_.cuit as cuit4_0_0_, teamentity0_.email as email5_0_0_, teamentity0_.fundation_date as fundatio6_0_0_, teamentity0_.logo as logo7_0_0_, teamentity0_.nombre_equipo as nombre_e8_0_0_, teamentity0_.title as title9_0_0_, teamentity0_.year as year10_0_0_ from equipo teamentity0_ where teamentity0_.id=?
+13:04:20.322 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [2]
+13:04:20.323 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+13:04:20.325 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, nombre_equipo, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+13:04:20.325 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+13:04:20.325 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+13:04:20.325 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+13:04:20.325 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [salo]
+13:04:20.326 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+13:04:20.327 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+13:04:20.328 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [salo]
+13:04:20.328 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+13:04:20.328 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1800]
+13:04:20.329 [http-nio-8081-exec-7] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [2]
+13:04:37.460 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_0_, teamentity0_.active as active2_0_0_, teamentity0_.afiliate_quantity as afiliate3_0_0_, teamentity0_.cuit as cuit4_0_0_, teamentity0_.email as email5_0_0_, teamentity0_.fundation_date as fundatio6_0_0_, teamentity0_.logo as logo7_0_0_, teamentity0_.nombre_equipo as nombre_e8_0_0_, teamentity0_.title as title9_0_0_, teamentity0_.year as year10_0_0_ from equipo teamentity0_ where teamentity0_.id=?
+13:04:37.461 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [3]
+13:04:37.463 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+13:04:37.466 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, nombre_equipo, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+13:04:37.468 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+13:04:37.468 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+13:04:37.468 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+13:04:37.469 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [sarah]
+13:04:37.469 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+13:04:37.470 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+13:04:37.470 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [sarah]
+13:04:37.470 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+13:04:37.470 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1800]
+13:04:37.471 [http-nio-8081-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [3]
+13:04:45.815 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.afiliate_quantity as afiliate3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.email as email5_0_, teamentity0_.fundation_date as fundatio6_0_, teamentity0_.logo as logo7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipo teamentity0_ order by teamentity0_.nombre_equipo asc, teamentity0_.year asc limit ?
+13:04:45.849 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL -select count(teamentity0_.id) as col_0_0_ from equipo teamentity0_
+13:11:08.381 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+13:11:08.382 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+13:11:08.383 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+13:11:08.392 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+13:11:08.399 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+13:11:08.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

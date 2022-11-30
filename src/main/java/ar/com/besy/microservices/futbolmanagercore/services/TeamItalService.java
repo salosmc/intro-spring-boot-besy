@@ -20,8 +20,8 @@ import java.util.Optional;
 @ConditionalOnProperty(prefix="app", name="edition", havingValue = "italia")
 
 @Service
-public class TeamItalService implements TeamService {
-
+public class TeamItalService {
+/*
     //    public TeamDTO getTeamById(Integer id)
     public Optional<TeamDTO> getTeamById(Integer id){
         return Optional.ofNullable(new TeamDTO(id,"Milan"));
@@ -41,4 +41,6 @@ public class TeamItalService implements TeamService {
     public void deleteById(Integer id) {
 
     }
+
+ */
 }

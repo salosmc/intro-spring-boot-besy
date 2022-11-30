@@ -12,11 +12,9 @@ public interface TeamService {
     //public TeamDTO getTeamById(Integer id);
 
     public Optional<TeamDTO> getTeamById(Integer id);
-
     public List<TeamDTO> findAllTeams(Pageable pageable);
-
     public Integer saveTeam(TeamDTO teamDTO);
-
     public void deleteById(Integer id);
+
 
 }

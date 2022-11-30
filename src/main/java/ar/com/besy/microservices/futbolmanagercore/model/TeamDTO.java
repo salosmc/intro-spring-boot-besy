@@ -6,6 +6,7 @@ import ar.com.besy.microservices.futbolmanagercore.validators.OnUpdate;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
+import org.mapstruct.Mapping;
 import org.springframework.hateoas.RepresentationModel;
 
 import javax.persistence.Entity;
@@ -21,7 +22,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @NoArgsConstructor //constructor sin argumentos
-        (staticName = "of") // sirve para constructor estatico -> of().TeamDTO
+        //(staticName = "of") // sirve para constructor estatico -> of().TeamDTO
 @AllArgsConstructor //constructor con todos los argumentos
 @RequiredArgsConstructor //constructor a medida con los dos campos @nonNull
 @EqualsAndHashCode
@@ -34,17 +35,17 @@ import java.time.LocalDate;
 //Hacemos que extienda de representation Model , lo que va a hacer es implemnetar metodos para agregar links a este objeto
 
 //Creamos la tablas en la base de datos
-@Entity(name="Equipo")
+//@Entity(name="Equipo") // Ya no va mas aca si no en el entitites
 public class TeamDTO extends RepresentationModel<TeamDTO> {
 
     @NonNull // para que sea necesario para el contructor a medida
     // descripcion y otros de la propiedad de algun atributo
     @ApiModelProperty(notes = "Unique identifier of the team.", example = "1", required = true, position = 0)
 
-    //@NotNull // validamos que no sean null
+    @NotNull // validamos que no sean null
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    //@Id //igual que esto, no va mas aca si no en entities
+    //@GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Integer id;
 
     @NonNull
