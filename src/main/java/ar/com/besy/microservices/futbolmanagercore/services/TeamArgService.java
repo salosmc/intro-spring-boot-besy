@@ -67,7 +67,7 @@ public class TeamArgService implements TeamService {
         return teams;
     }
 
-
+    //metodo a testear
     public List<TeamDTO> findAllTeams() {
         List<TeamEntity> teamsEntities = teamRepository.findAll(); //buscamos todo
         List<TeamDTO> teamsDtos = teamMapper.getTeamsDtos(teamsEntities); //mapeamos

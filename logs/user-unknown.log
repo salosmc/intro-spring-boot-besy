@@ -3742,3 +3742,625 @@ java.lang.NullPointerException: id is marked non-null but is null
 13:11:08.392 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
 13:11:08.399 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
 13:11:08.415 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+11:27:11.972 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+11:27:11.996 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 19.0.1 on DESKTOP-D0GFIHU with PID 11956 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+11:27:11.998 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+11:27:13.953 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+11:27:14.075 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 108 ms. Found 1 JPA repository interfaces.
+11:27:15.254 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+11:27:15.267 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+11:27:15.268 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+11:27:15.269 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+11:27:15.485 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+11:27:15.485 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3369 ms
+11:27:15.746 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+11:27:15.818 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+11:27:16.051 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+11:27:16.198 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+11:27:16.472 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+11:27:16.527 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+11:27:17.623 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+11:27:17.654 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+11:27:17.654 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+11:27:17.655 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+11:27:17.656 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+11:27:17.656 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+11:27:17.660 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+11:27:17.728 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+11:27:18.002 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+11:27:18.036 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+11:27:19.264 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+11:27:19.415 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+11:27:19.418 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+11:27:19.419 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+11:27:19.420 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+11:27:19.470 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+11:27:19.492 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+11:27:19.499 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+11:27:19.505 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+11:27:19.546 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+11:27:19.581 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:729)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 50 common frames omitted
+15:27:09.722 [main] INFO  o.s.b.t.c.SpringBootTestContextBootstrapper -Neither @ContextConfiguration nor @ContextHierarchy found for test class [ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplicationTests], using SpringBootContextLoader
+15:27:09.745 [main] INFO  o.s.t.c.s.AbstractContextLoader -Could not detect default resource locations for test class [ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:27:09.748 [main] INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils -Could not detect default configuration classes for test class [ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplicationTests]: FutbolManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+16:15:43.264 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+16:15:43.287 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 1.8.0_351 on DESKTOP-D0GFIHU with PID 12644 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+16:15:43.291 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+16:15:45.969 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:15:46.159 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 160 ms. Found 1 JPA repository interfaces.
+16:15:48.270 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+16:15:48.300 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+16:15:48.303 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:15:48.305 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:15:48.734 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+16:15:48.735 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 5261 ms
+16:15:49.080 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:15:49.214 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+16:15:49.572 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:15:49.944 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:15:50.563 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:15:50.640 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:15:52.206 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:15:52.217 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:15:52.218 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+16:15:52.219 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:15:52.226 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:15:52.226 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+16:15:52.232 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+16:15:52.301 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+16:15:52.420 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:15:52.438 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:15:54.266 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:15:54.436 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+16:15:54.446 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:15:54.446 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+16:15:54.448 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:15:54.478 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:15:54.526 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:15:54.547 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:15:54.552 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+16:15:54.580 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:15:54.635 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 50 common frames omitted
+16:29:10.805 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+16:29:10.816 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 1.8.0_351 on DESKTOP-D0GFIHU with PID 9876 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+16:29:10.819 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+16:29:13.470 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:29:13.613 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 119 ms. Found 1 JPA repository interfaces.
+16:29:15.456 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+16:29:15.468 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+16:29:15.469 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:29:15.469 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:29:15.693 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+16:29:15.694 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4606 ms
+16:29:15.968 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:29:16.085 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+16:29:16.337 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:29:16.536 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:29:17.042 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:29:17.095 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:29:18.144 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:29:18.151 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:29:18.151 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+16:29:18.151 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:29:18.153 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:29:18.153 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+16:29:18.157 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+16:29:18.184 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+16:29:18.290 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:29:18.310 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:29:20.049 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:29:20.193 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/3.0.0/springfox-spring-web-3.0.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+16:29:20.197 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:29:20.198 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+16:29:20.199 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:29:20.230 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:29:20.260 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:29:20.296 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:29:20.313 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+16:29:20.374 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:29:20.453 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/3.0.0/springfox-spring-web-3.0.0.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-webmvc/3.0.0/springfox-spring-webmvc-3.0.0.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 2; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams()
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 50 common frames omitted
+16:37:43.927 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+16:37:43.936 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 1.8.0_351 on DESKTOP-D0GFIHU with PID 8720 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+16:37:43.938 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+16:37:46.172 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:37:46.288 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 95 ms. Found 1 JPA repository interfaces.
+16:37:47.857 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+16:37:47.873 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+16:37:47.874 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:37:47.874 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:37:48.145 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+16:37:48.146 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 3967 ms
+16:37:48.533 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:37:48.640 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+16:37:48.970 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:37:49.192 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:37:49.819 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:37:49.907 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:37:51.329 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:37:51.337 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:37:51.337 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+16:37:51.337 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:37:51.339 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:37:51.340 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+16:37:51.343 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+16:37:51.376 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+16:37:51.478 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:37:51.495 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:37:53.001 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:37:53.125 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+16:37:53.128 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+16:37:53.129 [main] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+16:37:53.130 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:37:53.184 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:37:53.202 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+16:37:53.214 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+16:37:53.218 [main] INFO  o.a.catalina.core.StandardService -Stopping service [Tomcat]
+16:37:53.250 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener -
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+16:37:53.310 [main] ERROR o.s.boot.SpringApplication -Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'documentationPluginsBootstrapper' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/DocumentationPluginsBootstrapper.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at ar.com.besy.microservices.futbolmanagercore.FutbolManagerApplication.main(FutbolManagerApplication.java:10)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'webMvcRequestHandlerProvider' defined in URL [jar:file:/C:/Users/Besyuser/.m2/repository/io/springfox/springfox-spring-web/2.9.2/springfox-spring-web-2.9.2.jar!/springfox/documentation/spring/web/plugins/WebMvcRequestHandlerProvider.class]: Unsatisfied dependency expressed through constructor parameter 1; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 19 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.addCandidateEntry(DefaultListableBeanFactory.java:1609)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1573)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveMultipleBeans(DefaultListableBeanFactory.java:1462)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1349)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791)
+	... 36 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'teamController' method 
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams(Pageable)
+to {GET [/teams]}: There is already 'teamController' bean method
+ar.com.besy.microservices.futbolmanagercore.controllers.TeamController#getAllTeams() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:669)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:635)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:332)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:420)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:76)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:299)
+	at java.util.LinkedHashMap.forEach(LinkedHashMap.java:684)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:297)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:266)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:225)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:213)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:205)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 50 common frames omitted
+16:40:11.558 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+16:40:11.573 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 1.8.0_351 on DESKTOP-D0GFIHU with PID 5524 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+16:40:11.574 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+16:40:13.718 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+16:40:13.843 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 105 ms. Found 1 JPA repository interfaces.
+16:40:15.465 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+16:40:15.478 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+16:40:15.479 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+16:40:15.479 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+16:40:15.748 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+16:40:15.749 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4051 ms
+16:40:16.026 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+16:40:16.148 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+16:40:16.524 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+16:40:16.748 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+16:40:17.258 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+16:40:17.318 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+16:40:18.734 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+16:40:18.741 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:40:18.741 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+16:40:18.741 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+16:40:18.743 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+16:40:18.743 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+16:40:18.748 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+16:40:18.873 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+16:40:19.019 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+16:40:19.031 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+16:40:20.318 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+16:40:20.580 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+16:40:21.116 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+16:40:21.148 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+16:40:21.150 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+16:40:21.188 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+16:40:21.256 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+16:40:21.533 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: getAllTeamsUsingGET_1
+16:40:21.660 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 10.773 seconds (JVM running for 12.424)
+16:48:21.940 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:48:21.940 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Initializing Servlet 'dispatcherServlet'
+16:48:21.942 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet -Completed initialization in 2 ms
+16:48:22.254 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.afiliate_quantity as afiliate3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.email as email5_0_, teamentity0_.fundation_date as fundatio6_0_, teamentity0_.logo as logo7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipo teamentity0_
+16:49:34.706 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_0_, teamentity0_.active as active2_0_0_, teamentity0_.afiliate_quantity as afiliate3_0_0_, teamentity0_.cuit as cuit4_0_0_, teamentity0_.email as email5_0_0_, teamentity0_.fundation_date as fundatio6_0_0_, teamentity0_.logo as logo7_0_0_, teamentity0_.nombre_equipo as nombre_e8_0_0_, teamentity0_.title as title9_0_0_, teamentity0_.year as year10_0_0_ from equipo teamentity0_ where teamentity0_.id=?
+16:49:34.710 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [INTEGER] - [1]
+16:49:34.728 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -select nextval ('hibernate_sequence')
+16:49:34.791 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL -insert into equipo (active, afiliate_quantity, cuit, email, fundation_date, logo, nombre_equipo, title, year, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+16:49:34.793 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [1] as [BOOLEAN] - [false]
+16:49:34.793 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [2] as [INTEGER] - [0]
+16:49:34.794 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [3] as [VARCHAR] - [null]
+16:49:34.795 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [4] as [VARCHAR] - [salo]
+16:49:34.796 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [5] as [DATE] - [2022-11-25]
+16:49:34.797 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [6] as [VARCHAR] - [alg]
+16:49:34.797 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [7] as [VARCHAR] - [Huracan]
+16:49:34.797 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [8] as [VARCHAR] - [null]
+16:49:34.798 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [9] as [INTEGER] - [1900]
+16:49:34.798 [http-nio-8081-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder -binding parameter [10] as [INTEGER] - [1]
+16:49:41.925 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL -select teamentity0_.id as id1_0_, teamentity0_.active as active2_0_, teamentity0_.afiliate_quantity as afiliate3_0_, teamentity0_.cuit as cuit4_0_, teamentity0_.email as email5_0_, teamentity0_.fundation_date as fundatio6_0_, teamentity0_.logo as logo7_0_, teamentity0_.nombre_equipo as nombre_e8_0_, teamentity0_.title as title9_0_, teamentity0_.year as year10_0_ from equipo teamentity0_
+17:04:20.992 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+17:04:20.993 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+17:04:20.995 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+17:04:21.021 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+17:04:21.038 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+17:04:21.052 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.
+17:05:22.370 [background-preinit] INFO  o.h.validator.internal.util.Version -HV000001: Hibernate Validator 6.2.5.Final
+17:05:22.387 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Starting FutbolManagerApplication using Java 1.8.0_351 on DESKTOP-D0GFIHU with PID 11808 (C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy\target\classes started by Besyuser in C:\Users\Besyuser\Documents\besy\capacitacionSpringboot\intro-spring-boot-besy)
+17:05:22.389 [main] INFO  a.c.b.m.f.FutbolManagerApplication -No active profile set, falling back to 1 default profile: "default"
+17:05:24.776 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+17:05:24.905 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+17:05:26.668 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8081 (http)
+17:05:26.687 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Initializing ProtocolHandler ["http-nio-8081"]
+17:05:26.688 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+17:05:26.689 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet engine: [Apache Tomcat/9.0.68]
+17:05:27.036 [main] INFO  o.a.c.c.C.[.[.[/escuelait/api/v1/microservices] -Initializing Spring embedded WebApplicationContext
+17:05:27.036 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -Root WebApplicationContext: initialization completed in 4522 ms
+17:05:27.393 [main] INFO  o.h.jpa.internal.util.LogHelper -HHH000204: Processing PersistenceUnitInfo [name: default]
+17:05:27.537 [main] INFO  org.hibernate.Version -HHH000412: Hibernate ORM core version 5.6.12.Final
+17:05:27.841 [main] INFO  o.h.annotations.common.Version -HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+17:05:28.101 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Starting...
+17:05:28.719 [main] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Start completed.
+17:05:28.776 [main] INFO  org.hibernate.dialect.Dialect -HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+17:05:30.279 [main] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+17:05:30.289 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+17:05:30.289 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -table "equipo" does not exist, skipping
+17:05:30.290 [main] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+17:05:30.292 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -SQL Warning Code: 0, SQLState: 00000
+17:05:30.292 [main] WARN  o.h.e.jdbc.spi.SqlExceptionHelper -sequence "hibernate_sequence" does not exist, skipping
+17:05:30.296 [main] DEBUG org.hibernate.SQL -create sequence hibernate_sequence start 1 increment 1
+17:05:30.350 [main] DEBUG org.hibernate.SQL -create table equipo (id int4 not null, active boolean not null, afiliate_quantity int4 not null, cuit varchar(255), email varchar(255), fundation_date date, logo varchar(255), nombre_equipo varchar(255), title varchar(255), year int4 not null, primary key (id))
+17:05:30.501 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+17:05:30.526 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:05:32.111 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:05:32.447 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping -Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+17:05:33.089 [main] INFO  o.a.coyote.http11.Http11NioProtocol -Starting ProtocolHandler ["http-nio-8081"]
+17:05:33.128 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8081 (http) with context path '/escuelait/api/v1/microservices'
+17:05:33.130 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Context refreshed
+17:05:33.179 [main] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper -Found 1 custom documentation plugin(s)
+17:05:33.271 [main] INFO  s.d.s.w.s.ApiListingReferenceScanner -Scanning for api listing references
+17:05:33.713 [main] INFO  s.d.s.w.r.o.CachingOperationNameGenerator -Generating unique operation named: getAllTeamsUsingGET_1
+17:05:33.884 [main] INFO  a.c.b.m.f.FutbolManagerApplication -Started FutbolManagerApplication in 12.223 seconds (JVM running for 13.868)
+19:23:22.740 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -Closing JPA EntityManagerFactory for persistence unit 'default'
+19:23:22.746 [SpringApplicationShutdownHook] INFO  o.h.t.s.i.SchemaDropperImpl$DelayedDropActionImpl -HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+19:23:22.750 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop table if exists equipo cascade
+19:23:22.780 [SpringApplicationShutdownHook] DEBUG org.hibernate.SQL -drop sequence if exists hibernate_sequence
+19:23:22.799 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown initiated...
+19:23:22.812 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -HikariPool-1 - Shutdown completed.

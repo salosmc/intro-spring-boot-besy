@@ -13,6 +13,8 @@ public interface TeamService {
 
     public Optional<TeamDTO> getTeamById(Integer id);
     public List<TeamDTO> findAllTeams(Pageable pageable);
+
+    public List<TeamDTO> findAllTeams();
     public Integer saveTeam(TeamDTO teamDTO);
     public void deleteById(Integer id);
 

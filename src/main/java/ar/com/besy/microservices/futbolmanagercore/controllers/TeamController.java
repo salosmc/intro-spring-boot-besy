@@ -123,7 +123,7 @@ public class TeamController {
     }
 
     //@GetMapping("/teams")
-    @GetMapping
+    @GetMapping("/pageable")
     //antes //public ResponseEntity<List<TeamDTO>>  getAllTeams()
     //ahora para devolver el link del recurso consumido podemos devolver un CollectionModel {links, content}
     public ResponseEntity<CollectionModel<TeamDTO>>  getAllTeams(
@@ -152,6 +152,27 @@ public class TeamController {
 
         return ResponseEntity.ok( teamsModel);
     }
+
+    @GetMapping
+    public ResponseEntity<CollectionModel<TeamDTO>> getAllTeams() {
+
+        List<TeamDTO> teams = teamService.findAllTeams();
+
+        CollectionModel<TeamDTO> teamsModel =  hatoeasTeamHelper.generateLinksSelfList(teams);
+
+        teams.forEach(team -> {
+            try {
+                hatoeasTeamHelper.generateSelfLink(team);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        });
+        teams.forEach(team -> hatoeasTeamHelper.generatePlayersLink(team));
+
+        return ResponseEntity.ok(teamsModel);
+
+    }
+
 
     //@PostMapping ("/teams")
     @PostMapping

@@ -33,6 +33,17 @@ public class HatoeasTeamHelper {
 
     }
 
+    public CollectionModel<TeamDTO> generateLinksSelfList(List<TeamDTO> teams) {
+
+        Link link = linkTo(methodOn(TeamController.class).getAllTeams()).withSelfRel();
+        CollectionModel<TeamDTO> result = CollectionModel.of(teams, link);
+        return result;
+
+    }
+
+
+
+
     public void generatePlayersLink(TeamDTO teamDTO) {
 
         //Creo un link
